@@ -142,3 +142,12 @@
     transform: rotate(360deg);
   }
 }
+
+.wrapper-container {
+  display: flex;
+}
+
+.wrapper-register {
+  margin-top: 100px;
+  margin-right: 50rem;
+}

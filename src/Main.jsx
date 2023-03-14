@@ -97,7 +97,10 @@ function Main({ isShowSidebar }) {
 
   return (
     <div className={isShowSidebar ? "main" : "main full"}>
-      <div>{renderProductList()}</div>
+      <div className="wrapper-container">
+        <div className="wrapper-content">{renderProductList()}</div>
+      </div>
+
       <input
         type="text"
         onChange={(e) => handleChangeProductData(e, "name")}

@@ -4,6 +4,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Main from "./Main";
 import Footer from "./Footer";
+import Register from "./Sigup/Register";
 
 function App() {
   const [isShowSidebar, setIsShowSidebar] = useState(true);
@@ -19,9 +20,14 @@ function App() {
         isShowSidebar={isShowSidebar}
         setIsShowSidebar={setIsShowSidebar}
       />
+
       <div className="container">
         <Sidebar isShowSidebar={isShowSidebar} />
+
         <Main isShowSidebar={isShowSidebar} />
+        <div className="wrapper-register">
+          <Register />
+        </div>
       </div>
       <Footer />
     </div>
